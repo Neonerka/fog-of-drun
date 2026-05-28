@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "jsx": "react-jsx",
+    "moduleResolution": "bundler",
+    "target": "esnext",
+    "module": "esnext",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "lib": ["es2022"]
+  },
+  "include": ["**/*.ts", "**/*.tsx"]
+}

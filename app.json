@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "fogofdrun",
+    "slug": "fogofdrun",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Приложению нужен доступ к геолокации для отслеживания вашего маршрута и открытия карты.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Приложению нужен доступ к геолокации в фоне для непрерывного отслеживания прогулок.",
+        "UIBackgroundModes": [
+          "location",
+          "fetch"
+        ]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0f172a",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "FOREGROUND_SERVICE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ],
+      "package": "com.anonymous.fogofdrun"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Приложению нужен доступ к геолокации в фоне для непрерывного отслеживания прогулок.",
+          "locationWhenInUsePermission": "Приложению нужен доступ к геолокации для отслеживания вашего маршрута."
+        }
+      ]
+    ]
+  }
+}
